@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity" >
+
+    <!-- </FrameLayout> -->
+    
+    <Button
+        android:id="@+id/reports"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/company_profile"
+        android:layout_alignBottom="@+id/company_profile"
+        android:layout_alignLeft="@+id/driver_profile"
+        android:contentDescription="@string/desc"
+        android:background="@drawable/blush"
+        android:text="@string/reports"
+        android:drawableTop="@drawable/report_small"
+        android:textColor="@color/white"
+        android:paddingBottom="1dp"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/check_vehicle"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/driver_profile"
+        android:layout_alignLeft="@+id/company_profile"
+        android:background="@drawable/blue_de_france"
+        android:contentDescription="@string/desc"
+        android:drawableTop="@drawable/vehicle_small"
+        android:text="@string/check_vehicle"
+        android:textColor="@color/white"
+        android:paddingBottom="1dp"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/company_profile"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/desc"
+        android:text="@string/company_profile"
+        android:background="@drawable/green"
+        android:drawableTop="@drawable/company_profile_small"
+        android:textColor="@color/white"
+        android:paddingBottom="1dp"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/driver_profile"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/reports"
+        android:layout_toLeftOf="@+id/check_vehicle"
+        android:background="@drawable/safety_orange"
+        android:contentDescription="@string/desc"
+        android:text="@string/driver_profile"
+        android:drawableTop="@drawable/driver_profile_small"
+        android:textColor="@color/white"
+        android:paddingBottom="1dp"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reports"
+        android:layout_below="@+id/reports"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shine_blue"
+        android:drawableTop="@drawable/camera_small"
+        android:layout_toLeftOf="@+id/company_profile"
+        android:textColor="@color/white"
+        android:text="@string/camera_button" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/camera"
+        android:drawableTop="@drawable/exit_small"
+        android:background="@drawable/shine_pink"
+        android:layout_alignLeft="@+id/company_profile"
+        android:layout_alignRight="@+id/company_profile"
+        android:textColor="@color/white"
+        android:text="@string/close_app" />
+
+</RelativeLayout>

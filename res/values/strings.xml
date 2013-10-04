@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="exception_message">Error occoured during image processing</string>
+    <string name="app_name">VehicleCheck</string>
+    <string name="check_vehicle">Vehicle Check</string>
+    <string name="driver_profile">Driver Profile</string>
+    <string name="company_profile">Company Profile</string>
+    <string name="reports">Reports</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="button_next">Next</string>
+    <string name="camera_button">Camera</string>
+    <string name="start_mileage_lable">Start Mileage</string>
+    <string name="end_mileage_lable">End Mileage</string>
+    <string name="desc">desc</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="title_activity_main">Home</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_select">Vehicle Number</string>
+    <string name="title_activity_ceck_list">Ceck List Activity</string>
+    <string name="title_activity_summary">Summary Activity</string>
+    <string name="start_mileage">0</string>
+    <string name="end_mileage">0</string>
+    <string name="oil_checkbox">Oil</string>
+    <string name="fuel_checkbox">Fuel</string>
+    <string name="engine_checkbox">Engine</string>
+    <string name="washed_checkbox">Washed</string>
+    <string name="water_checkbox">Water</string>
+    <string name="submit_button_txt">Submit</string>
+    <string name="driver_name_txt">Driver Name: </string>
+    <string name="driver_name_view_txt">Not provided</string>
+    <string name="vehicle_lable_txt">Vehicle: </string>
+	<string name="vehicle_number_view_txt">Not provided</string>
+	<string name="start_mileage_lable_txt">Start Mileage: </string>
+	<string name="end_mileage_lable_txt">End Mileage: </string>
+	<string name="oil_lable_txt">Oil: </string>
+	<string name="washed_lable_txt">Washed: </string>
+	<string name="fuel_lable_txt">Fuel: </string>
+	<string name="water_lable_txt">Water: </string>
+	<string name="engine_lable_txt">Engine: </string>
+	<string name="confirm_button">Confirm</string>
+	<string name="engine_view_txt">No</string>
+	<string name="oil_view_txt">No</string>
+	<string name="fuel_view_txt">No</string>
+	<string name="water_view_txt">No</string>
+	<string name="washed_view_txt">No</string>
+	<string name="end_meileage_view_txt">0</string>
+	<string name="close_app">Exit</string>
+</resources>
