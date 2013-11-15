@@ -32,7 +32,7 @@
         android:background="@drawable/blue_de_france"
         android:contentDescription="@string/desc"
         android:drawableTop="@drawable/vehicle_small"
-        android:text="@string/check_vehicle"
+        android:text="@string/check_out"
         android:textColor="@color/white"
         android:paddingBottom="1dp"
         android:textSize="11sp" />
@@ -77,17 +77,29 @@
         android:layout_toLeftOf="@+id/company_profile"
         android:textColor="@color/white"
         android:text="@string/camera_button" />
+    
+    <Button
+        android:id="@+id/sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/camera"
+        android:drawableTop="@drawable/exit_small"
+        android:background="@drawable/safety_orange"
+        android:layout_alignLeft="@+id/company_profile"
+        android:layout_alignRight="@+id/company_profile"
+        android:textColor="@color/white"
+        android:text="@string/sign_out" />
 
     <Button
         android:id="@+id/exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/camera"
-        android:drawableTop="@drawable/exit_small"
+        android:layout_alignLeft="@+id/camera"
+        android:layout_alignRight="@+id/sign_out"
+        android:layout_below="@+id/camera"
         android:background="@drawable/shine_pink"
-        android:layout_alignLeft="@+id/company_profile"
-        android:layout_alignRight="@+id/company_profile"
-        android:textColor="@color/white"
-        android:text="@string/close_app" />
+        android:drawableTop="@drawable/exit_small"
+        android:text="@string/close_app"
+        android:textColor="@color/white" />
 
 </RelativeLayout>

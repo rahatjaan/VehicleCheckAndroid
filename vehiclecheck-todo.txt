@@ -1,0 +1,64 @@
+[21:31:56] "": 2 kaam kerny waly hain
+[21:32:02] "": ANdroid app main
+[21:32:02]  ok
+[21:32:06] "": vehicle check wali app main
+[21:32:13] "": aik tu signout ka button b hona chahye
+[21:32:21] "": taa k agar kisi aur user sey login kerna ho
+[21:32:23] "": tu woh ho sky
+[21:32:27] "": and on signout
+[21:32:36] "": jo b information previous user ki preferences main save
+[21:32:38] "": ha woh remove ho jaye
+[21:32:43] "": aur jab next user login kry
+[21:32:48] "": tu uski information update ho jaye
+[21:32:50] "": dosra
+[21:32:54]  right
+[21:33:05] "": vehicle_number autocomplete hona chahye
+[21:33:06] "": e.g.
+[21:33:17] "": another thing
+[21:33:22] "": Vehicle Check wala button
+[21:33:30] "": ka title hona chahye chahye Checkout
+[21:33:38] "": Jab checkout pay click ho
+[21:33:44] "": tu jo screen aati ha
+[21:33:55] "": us main start milage and end milage nikaaal do
+[21:34:01] "": uski jaga per
+[21:34:07] "": user ka current lat/long
+[21:34:11] "": aur aaj ki date aa jaye
+[21:34:13] "": it means
+[21:34:20] "": k remove the existing two fields
+[21:34:24] "": start milage and end milage
+[21:34:26] "": uski jaga
+[21:34:30] "": add 3 new fields
+[21:34:34] "": Lat
+[21:34:35] "": Long
+[21:34:38] "": Current Date
+[21:34:44]  ok
+[21:34:50] "": yeh teeno fields auto populate hoon
+[21:34:57] "": user ko enter na krna pary
+[21:35:03] "": aur yeh editable nahi honi chahye
+[21:35:12] "": second thing to do
+[21:35:19]  third
+[21:35:23]  :)
+[21:35:24] "": jab vehcile number ki field main click kry
+[21:35:44] "": tu atuomatically woh saari vehicles us compony ki as autocomplete show ker dy
+[21:35:45] "": e.g.
+[21:35:51] "": if user types RIR
+[21:35:58] "": tu us company ki sari vehicles
+[21:36:06] "": jin ka number RIR sey start hota ha
+[21:36:12] "": woh atuocomplete field main any lag
+[21:36:13] "": jayen
+[21:36:18] "": taa k user select ker sky
+[21:36:27] "": autocomplete ka control hota ha Android main?
+[21:36:50]  han hota hy
+[21:36:52] "": http://www.primefaces.org/showcase/ui/autoCompleteBasic.jsf
+[21:37:04] "": I am talking about this kind of behavior
+[21:37:18] "": yeh 3 kaam hain kerny awaly
+[21:37:34]  webservice leke hay aap ny to return all v numbers
+[21:37:36] "": Priorities
+[21:37:49] "": 1) Sign out option
+[21:38:08] "": 2) Home button on all pages so that you can come back to home from any screen
+[21:38:23] "": 3) Change TItle to Checkout
+[21:38:30] "": 4) Autocomplete
+[21:38:35] "": 5) Lat/Long
+[21:39:03] "": Sign Out, Change Title yeh tu less than one hour main ho jayen gy
+[21:39:13] "": AUto complete per thora kaam kerny ki zrurat ho gi
+

@@ -16,11 +16,14 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.Menu;
@@ -38,6 +41,8 @@ public class MainActivity extends Activity implements OnClickListener {
 	final int PIC_CROP = 2;
 	private Uri picUri;
 	private Bitmap numberPlatePic;
+	private SharedPreferences preferences;
+	private Editor edit;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -48,12 +53,29 @@ public class MainActivity extends Activity implements OnClickListener {
 		cameraBtn.setOnClickListener(this);
 		Button exitBtn = (Button) findViewById(R.id.exit);
 		exitBtn.setOnClickListener(this);
-
+		preferences = PreferenceManager.getDefaultSharedPreferences(this);
 		findViewById(R.id.check_vehicle).setOnClickListener(
 				new View.OnClickListener() {
 					@Override
 					public void onClick(View view) {
 						showCheckListActivity();
+					}
+				});
+		
+		findViewById(R.id.sign_out).setOnClickListener(
+				new View.OnClickListener() {
+					@Override
+					public void onClick(View view) {
+						finish();
+						Intent homeIntent = new Intent(MainActivity.this,
+								LoginActivity.class);
+						MainActivity.this.startActivity(homeIntent);
+						edit = preferences.edit();
+						edit.putString("loginStatus", "false");
+						edit.putString("email", "");
+						edit.putString("userId", "");
+						edit.putString("companyId", "");
+						edit.commit();
 					}
 				});
 	}

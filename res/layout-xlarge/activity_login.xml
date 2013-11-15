@@ -56,8 +56,8 @@
                 android:hint="@string/prompt_email"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
-                android:text="rahat@gmail.com"
                 android:singleLine="true"
+                android:text="rahat@gmail.com"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
@@ -74,22 +74,21 @@
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:text="rahat"
                 android:singleLine="true"
+                android:text="rahat"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <Button
                 android:id="@+id/sign_in_button"
                 android:layout_width="300dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="16dp"
+                android:layout_height="90dp"
                 android:background="@drawable/shine_blue"
                 android:drawableTop="@drawable/login"
                 android:text="@string/action_sign_in_register"
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
                 android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>

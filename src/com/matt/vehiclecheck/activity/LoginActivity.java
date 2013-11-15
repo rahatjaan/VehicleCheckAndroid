@@ -265,21 +265,26 @@ public class LoginActivity extends Activity {
 		try {
 			androidHttpTransport.call(SOAP_ACTION, envelope);
 			SoapObject userDetails = (SoapObject) envelope.getResponse();
-
-			for (int i = 0; i < userDetails.getPropertyCount(); i++) {
-				Object property = userDetails.getProperty(i);
-				if(i==0){
-					edit.putString("userId", property.toString());
-				}
-				if (property instanceof SoapObject) {
-					SoapObject userroles = (SoapObject) property;
-					String id = userroles.getProperty("id").toString();
-					edit.putString("companyId", "" + id);
-				}
+			Object userId = userDetails.getProperty("id");
+			Object companyId = userDetails.getProperty("ordanizationId");
+			
+			edit.putString("userId", userId.toString());
+			edit.putString("companyId", companyId.toString());
+//			for (int i = 0; i < userDetails.getPropertyCount(); i++) {
+//				Object property = userDetails.getProperty(i);
 				
-				edit.commit();
-			}
+//				if(i==0){
+//					edit.putString("userId", property.toString());
+//				}
+//				if (property instanceof SoapObject) {
+//					SoapObject userroles = (SoapObject) property;
+//					String id = userroles.getProperty("id").toString();
+//					edit.putString("companyId", "" + id);
+//				}
+				
+//			}
 
+			edit.commit();
 			Log.i("myApp", userDetails.toString());
 			return true;
 
