@@ -57,7 +57,7 @@
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:text="rahat@gmail.com"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
@@ -75,7 +75,7 @@
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:text="rahat"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
